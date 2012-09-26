@@ -28,7 +28,8 @@ public class Timesheet {
 		this.hours = hours;
 	}
 	
+	@Override
 	public String toString() {
-		return "Timesheet [who=' + who + ', task=' + task + ', hours=' + hours + ']";
+		return "Timesheet [who=" + who + ", task=" + task + ", hours=" + hours + "]";
 	}
 }
