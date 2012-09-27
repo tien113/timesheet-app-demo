@@ -34,18 +34,6 @@ public class Timesheet {
 		this.task = task;
 		this.hours = hours;
 	}
-
-	public Employee getWho() {
-		return who;
-	}
-
-	public Task getTask() {
-		return task;
-	}
-
-	public Integer getHours() {
-		return hours;
-	}
 	
 	public Long getId() {
 		return id;
@@ -55,18 +43,30 @@ public class Timesheet {
 		this.id = id;
 	}
 
+	public Employee getWho() {
+		return who;
+	}
+
 	public void setWho(Employee who) {
 		this.who = who;
+	}
+
+	public Task getTask() {
+		return task;
 	}
 
 	public void setTask(Task task) {
 		this.task = task;
 	}
 
+	public Integer getHours() {
+		return hours;
+	}
+
 	public void setHours(Integer hours) {
 		this.hours = hours;
 	}
-	
+
 	public void alterHours(Integer hours) {
 		this.hours = hours;
 	}
@@ -95,7 +95,7 @@ public class Timesheet {
 		if (obj == null) {
 			return false;
 		}
-		if (!(obj instanceof Employee)) {
+		if (!(obj instanceof Timesheet)) {
 			return false;
 		}
 		Timesheet other = (Timesheet) obj;

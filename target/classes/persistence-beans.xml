@@ -39,9 +39,19 @@
   		<props>
   			<prop key="dialect">org.hibernate.dialect.H2Dialect</prop>
   			<prop key="hibernate.show_sql">true</prop>
-  			<prop key="hibernate.hbm2ddl.auto">create-update</prop>
+  			<prop key="hibernate.hbm2ddl.auto">update</prop>
   		</props>
   	</property>
+  </bean>
+  
+  <bean id="transactionManager"
+  		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+  	<property name="sessionFactory" ref="sessionFactory" />
+  </bean>
+  
+  <bean id="jdbcTemplate"
+  		class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate">
+  	<constructor-arg type="javax.sql.DataSource" ref="dataSource" />
   </bean>
   
 </beans>
