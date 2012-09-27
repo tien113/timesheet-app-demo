@@ -43,7 +43,7 @@ public class EmployeeController {
 		Employee employee = employeeDao.find(id);
 		model.addAttribute("employee", employee);
 		
-		return "employee/view";
+		return "employees/view";
 	}
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
