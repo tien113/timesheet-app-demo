@@ -4,8 +4,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.timesheet</groupId>
-  <artifactId>timesheet-app</artifactId>
-  <version>0</version>
+  <artifactId>org.timesheet</artifactId>
+  <version>0.0.1-SNAPSHOT-</version>
   <name>Timesheet Management On Spring</name>
   <packaging>war</packaging>
   
@@ -14,9 +14,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<plugin>            
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-war-plugin</artifactId>
-			<configuration>
-	    		<webXml>webapp/WEB-INF/web.xml</webXml>        
-	  		</configuration>
+			<version>2.0</version>
 		</plugin>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
