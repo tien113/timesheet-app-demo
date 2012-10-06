@@ -77,7 +77,7 @@ public class EmployeeController {
 	@RequestMapping(params = "new", method = RequestMethod.GET)
 	public String createEmployeeForm(Model model) {
 		model.addAttribute("employee", new Employee());
-		return "employee/new";
+		return "employees/new";
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
