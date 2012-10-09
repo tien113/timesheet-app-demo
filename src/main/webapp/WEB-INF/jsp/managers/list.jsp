@@ -7,7 +7,7 @@
 <html>
 <head>
     <title>Managers</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/resources/style.css" type="text/css">
 </head>
 <body>
     <h1>List of managers</h1>

@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>Employee page</title>
-    <link rel="stylesheet" href="/timesheet-app/resources/style.css" type="text/css">
+    <link rel="stylesheet" href="/resources/style.css" type="text/css">
 </head>
 <body>
     <h2>Employee info</h2>
@@ -31,7 +31,7 @@
     <br /><br />
     <a href="../employees">Go Back</a>
 
-    <script src="/timesheet-app/resources/jquery-1.7.1.js"></script>
+    <script src="/resources/jquery-1.7.1.js"></script>
     <script>
         (function() {
             $("#unlock").on("click", function() {
