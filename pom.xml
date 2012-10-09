@@ -99,6 +99,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
  		<version>${spring.version}</version>
 	</dependency>
 	
+	<!-- spring requirement -->
+	<dependency>
+ 		<groupId>cglib</groupId>
+ 		<artifactId>cglib</artifactId>
+ 		<version>2.2.2</version>
+	</dependency>
+	
 	<!-- servlet -->
   	<dependency>
   		<groupId>jstl</groupId>
